@@ -59,4 +59,28 @@ export const robots = [
     username: 'Moriah.Stanton',
     email: 'Rey.Padberg@karina.biz'
   }
+  ,{
+    id: 11,
+    name: 'jerry adeyemi',
+    username: 'jeroro',
+    email: 'jerry.tobi@adeyemi.biz'
+  },
+  {
+    id: 12,
+    name: 'dupe lawal',
+    username: 'duppy',
+    email: 'duppy.kaffy@lawal.biz'
+  },
+  {
+    id: 13,
+    name: 'monsurat onabanjo',
+    username: 'tula',
+    email: 'monsurat.11@onabanjo.biz'
+  },
+  {
+    id: 14,
+    name: 'subomi lawal',
+    username: 'subby',
+    email: 'subomi.ola@lawal.biz'
+  }
 ];
