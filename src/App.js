@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Tablist from './Tablist.js';
 import SearchBox from './SearchBox.js';
+import Scroll from './Scroll.js';
 import './App.css';
  class App extends Component{
 constructor(){ 
@@ -30,7 +31,9 @@ render() {
         <header className='tc'>
         <h1 className='f1'>wlecome to my robots page</h1>
         <SearchBox searchChange={this.onSearchChange}/>
+        <Scroll>
        <Tablist robots = {filteredRobots}/>
+       </Scroll>
 </header>
 );      
 }
