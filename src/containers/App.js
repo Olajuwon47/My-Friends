@@ -20,14 +20,14 @@ onSearchChange = (event) => {
     this.setState({searchfield: event.target.value });
 }
 render() {
-    const filteredRobots = this.state.robots.filter(robot => {
-       return  robot.name.toLowerCase().includes(this.state.searchfield.toLowerCase());
+     const{robots, searchfield}=this.state;  
+    const filteredRobots = robots.filter(robot => {
+       return  robot.name.toLowerCase().includes(searchfield.toLowerCase());
     }) 
-    /*this code is  for multiply users*/
-    if(this.state.robots.length === 0) {
-        return <h1>loading</h1>
-    } else{
-    return(
+    /*this code is  for multiply users if(robots.length === 0){ */
+    return !robots.length?
+        <h1>loading</h1>:
+    (
         <header className='tc'>
         <h1 className='f1'>wlecome to my robots page</h1>
         <SearchBox searchChange={this.onSearchChange}/>
@@ -36,7 +36,6 @@ render() {
        </Scroll>
 </header>
 );      
-}
 }
 }
 export default App;
