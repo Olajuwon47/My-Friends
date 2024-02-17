@@ -1,5 +1,5 @@
 import React from 'react';
-import Tab from './Tab.js';
+import Tab from '../components/Tab.js';
 function Tablist ({ robots }) {
    const TablistComponent = robots.map((_users, i)=>{
     return <Tab
