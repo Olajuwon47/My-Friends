@@ -1,13 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { Provider} from 'react-redux';
+import { store } from './store.js'
+//import { createStore } from 'redux'; 
+//import { createLogger } from 'redux-logger'; 
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import'tachyons';
 import App from './containers/App.js';
+//import {searchRobots  } from './reducers.js'
+//const store = createStore(searchRobots);
+//const logger= createLogger();
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-<App />, 
+    <Provider store={store}>
+    <App />, 
+    </Provider>
   </React.StrictMode> 
 );
 

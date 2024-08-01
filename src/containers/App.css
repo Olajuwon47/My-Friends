@@ -4,13 +4,13 @@
   font-family: 'SEGA LOGO FONT';
   font-style: normal;
   font-weight: normal;
-  src: local('SEGA LOGO FONT'), url('SEGA.woff') format('woff');
+  src: local('SEGA LOGO FONT'), url('SEGA.TTF') format('truetype');
   }
 
 h1{
  font-family: 'SEGA LOGO FONT'; 
 font-weight: 200;
-columns:#181818 ;
+color:#181818 ;
  }
    
     
